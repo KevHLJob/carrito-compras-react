@@ -17,7 +17,7 @@ function CartItem ({ thumbnail, price, title, quantity, addToCart }) {
 
       <footer>
         <small>
-          Qty: {quantity}
+          Cantidad: {quantity}
         </small>
         <button onClick={addToCart}>+</button>
       </footer>

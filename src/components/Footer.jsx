@@ -1,5 +1,6 @@
 import './Footer.css'
 
+// componente para mostrar un Footer en la página
 export function Footer () {
   // const { filters } = useFilters()
 

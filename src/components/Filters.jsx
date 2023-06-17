@@ -3,18 +3,18 @@ import { useFilters } from '../hooks/useFilters.js'
 import './Filters.css'
 
 export function Filters () {
-  const { filters, setFilters } = useFilters()
+  const { filters, setFilters } = useFilters() //usamos un Hook para useFilters
 
   const minPriceFilterId = useId()
   const categoryFilterId = useId()
-
+//Change precio minimo
   const handleChangeMinPrice = (event) => {
     setFilters(prevState => ({
       ...prevState,
       minPrice: event.target.value
     }))
   }
-
+//Change cambio de categoría
   const handleChangeCategory = (event) => {
     // ⬇️ ESTO HUELE MAL
     // estamos pasando la función de actualizar estado
